@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <title>0x1c21.</title>
+</head>
+<body>
+    <p align="center"><img src="logo.png" width="200"></p>
+    <p class="centered-text">0x1c21</p>
+    <p class="centered-text"><i>"We on light side... maybe..."</i></p><br>
+    <p class="text">We (0x1c21 || LightHackers) are hacking group that doing some malicious things..</p>
+    <p class="text">You don't need to worry, we not Anonymous, we doing this all for fun.</p>
+    <p class="text">Don't be mad at us. 😁</p><br>
+    <p class="text">Probably if you see this, you got hacked, or something.</p>
+    <p class="text">That's a simple web-site, that informs you about us, so u can't find anything here.</p>
+    <p class="text">What to say more?</p><br>
+    <p class="text">I think nothing.</p>
+    <p class="text">Goodbye!</p>
+
+    <div class="centered">
+        <button onclick="playBackgroundMusic()" class="media-button">Play.</button>
+        <button onclick="stopBackgroundMusic()" class="media-button">Stop.</button>
+    </div>
+
+    <p class="centered-text" id="playingRightNow">Don't playing anything right now...</p>
+
+    <script>
+        backgroundMusic = new Audio("background.mp3");
+
+        playingRightNow = document.getElementById("playingRightNow");
+
+        function playBackgroundMusic() {
+            backgroundMusic.play();
+
+            playingRightNow.textContent = "Playing right now: Sun down, i'm up."
+        }
+
+        function stopBackgroundMusic() {
+            backgroundMusic.pause();
+
+            playingRightNow.textContent = "Don't playing anything right now..."
+        }
+    </script>
+</body>
+</html>
